@@ -1,0 +1,201 @@
+body {
+    background-image: url("assets/storytelling\ images.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 7.5in;
+}
+/* Header Styling */
+.story-title {
+    display: block;
+    margin: 3rem auto 1rem;
+    width: 50%;
+    max-width: 400px;
+}
+
+.description {
+    margin: 1rem 3rem; 
+}
+
+/* Content */
+.content {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: wavy;
+    line-height: 2;
+    font-size: 15pt;
+}/* Buttons */
+.button {
+    background: #3D94F6;
+    background-image: -webkit-linear-gradient(top, #3D94F6, #1E62D0);
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-family: Brush Script MT;
+    font-size: 35px;
+    font-weight: 100;
+    padding: 10px 20px;
+    box-shadow: 1px 1px 20px 0 #000000;
+    text-shadow: 1px 1px 20px #000000;
+    border: solid #337FED 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button:hover {
+    border: solid #337FED 1px;
+    background: #1E62D0;
+    background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -webkit-gradient(to bottom, #1E62D0, #3D94F6);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}/* Container */
+.container {
+    margin-top: 2rem;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+/* Varibales HTML Styling */
+.variables {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.variable img {
+    width: 20%;
+}
+
+.variable p {
+    font-size: 20pt;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: wavy;
+}
+.variable {
+    display: flex;
+    height: 15rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+/* Rules HTML Styling */
+
+.header__image{
+    display: block;
+    margin: 20px auto;
+    height: 100px;
+}
+
+.div__text{
+    max-width: 50em;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2;
+    font-size: 15pt;
+}
+/* Stling list tage */
+::marker {
+    content: "»";
+    --hue: 0;
+    color: navy;
+    font-size: 30pt;
+  }
+  
+  li {
+    padding-inline-start: 1ch;
+  }
+ 
+/* Footer */
+.footer--container{
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+  .footer--logo:hover {
+      opacity: 0.7;
+  }
+
+  .insta_footer{
+      width: 60px;
+      height: 60px;
+  }
+.fb_footer{
+    width: 80px;
+    height: 80px;
+}
+.applestore_footer{
+    width: 90px;
+    height: 90px;
+}
+.footer-text{
+    font-size: 15pt;
+}
+  /* Media Query */ 
+
+@media (max-width:992px) {
+    body {
+        background-image: url("assets/background-story.png");
+        height: 13in;
+    }
+
+    .content {
+        font-size: 20px;
+    }
+
+    .story-title {
+        margin: 2rem auto 1rem;
+    }
+
+    .container {
+        flex-direction: column;
+        height: 200px;
+        justify-content: space-around;
+        margin: 50px auto 0;
+        width: 40%;
+    }
+
+    .description {
+        margin: 1rem;
+    }
+
+    .button {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:767px) {
+    body {
+        height: 100vh;
+    }
+    .content {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 660px) {
+    .container {
+        margin: 0 3rem;
+    }
+    .footer-text{
+        display: none;
+    }
+    .footer--container{
+        left: 0;
+        bottom: -5%;
+    }
+}
